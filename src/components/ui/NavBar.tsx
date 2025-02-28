@@ -11,7 +11,7 @@ import {
   faHeart,
 } from "@fortawesome/free-solid-svg-icons";
 
-import Select from "./ui/Select";
+import Select from "./Select";
 import { useState } from "react";
 
 interface IProps {}

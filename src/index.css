@@ -10,16 +10,17 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
+
   font-family: "Sen", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
-nav li a{
+nav li a {
   color: rgba(255, 255, 255, 0.55);
 }
+
 nav li a:hover {
   color: rgba(255, 255, 255, 0.75);
 }
