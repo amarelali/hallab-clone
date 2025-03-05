@@ -1,11 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faFacebookF,
-  faInstagram,
-  faLinkedin,
-  faXTwitter,
-} from "@fortawesome/free-brands-svg-icons";
-import {
   faShoppingCart,
   faSearch,
   faHeart,
@@ -13,6 +7,7 @@ import {
 
 import Select from "./Select";
 import { useState } from "react";
+import { socialMediaLinks } from "../../data";
 
 interface IProps {}
 const NavBar = ({}: IProps) => {
@@ -25,12 +20,7 @@ const NavBar = ({}: IProps) => {
     { label: "Menus", link: "#" },
     { label: "Contact us", link: "#" },
   ];
-  const socialMediaLinks = [
-    { icon: faFacebookF, url: "https://www.facebook.com", name: "Facebook" },
-    { icon: faInstagram, url: "https://www.instagram.com", name: "Instagram" },
-    { icon: faXTwitter, url: "https://twitter.com", name: "Twitter" },
-    { icon: faLinkedin, url: "https://www.linkedin.com", name: "LinkedIn" },
-  ];
+
   const [searchText, setSearchText] = useState<string>("");
   const [displaySearchInput, setDisplaySearchInput] = useState<boolean>(false);
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
