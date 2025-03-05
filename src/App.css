@@ -33,3 +33,88 @@
 .read-the-docs {
   color: #888;
 }
+
+
+
+.card-body {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  color: #212529;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+.giftIdeas .slick-next,
+.giftIdeas .slick-prev {
+  position: absolute;
+  top: 50%;
+  display: block !important;
+  width: 20px;
+  height: 20px;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: #ADB5BD;
+}
+
+.giftIdeas .slick-next:hover,
+.giftIdeas .slick-prev:hover {
+  color: #495057 !important;
+}
+
+.giftIdeas .slick-prev,.giftIdeas .slick-next{
+  top: 105%;
+}
+.giftIdeas .slick-next {
+  right: 47%;
+}
+.giftIdeas .slick-prev {
+  left: 47%;
+}
+.giftIdeas .slick-next:before, .giftIdeas .slick-prev:before{
+  font-size: 30px;
+  color: #495057;
+}
+/* For mobile screen sizes (below 768px) */
+@media (max-width: 767px) {
+  .giftIdeas .slick-next {
+    right: 30%; /* For mobile screens */
+  }
+
+  .giftIdeas .slick-prev {
+    left: 30%; /* For mobile screens */
+  }
+}
+/* *** Feedbacks */
+.feedbacks .slick-prev:before {
+  content: "\f053" !important;
+}
+.feedbacks .slick-next:before {
+  content: "\f054" !important;
+}
+
+.feedbacks .slick-next:before, .feedbacks .slick-prev:before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 45px;
+  color: rgba(255, 255, 255, 1);
+  margin: 0 60px 0px 0px !important;
+  display: unset !important;
+  border: unset !important;
+}
+.feedbacks .slick-next:after, .feedbacks .slick-prev:after {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 45px;
+  color: rgba(255, 255, 255, 1);
+  margin: 0 0px 0px 60px !important;
+  display: unset !important;
+  border: unset !important;
+}
+
+.footer a{
+  text-decoration: underline;
+}
+
+
+.text-muted{
+  color: rgba(255, 255, 255, 0.7) !important
+}
