@@ -308,3 +308,241 @@ export const categories = [
     id: 11,
   },
 ];
+
+export const sweetsProducts = [
+  {
+    name: "Chocolate Baklawa Peanuts",
+    description: "A delightful fusion between Baklava and Chocolate.",
+    image:
+      "/web/image/product.template/78243/image_512/Chocolate%20Baklawa%20Peanuts?unique=cfe65a6",
+    url: "/shop/chocolate-baklawa-peanuts-78243",
+    product_id: "63988",
+    price: 19.50,
+    currency: "USD",
+    min_quantity: "0.5",
+  },
+  {
+    name: "Prepacked-Baklawa&Maamoul",
+    description:
+      "Double layered assortment of 1265 gr including 635 gr of Mix Baklava pieces stuffed with Pistachios Cashew nuts & Walnuts and 630 gr Mix Maamoul Mini pieces stuffed with a variety of fillings such as Dates Ground Walnuts and Ground Pistachios.",
+    image:
+      "/web/image/product.template/72146/image_512/Prepacked-Baklawa%26Maamoul?unique=82dbe08",
+    url: "/shop/prepacked-baklawa-maamoul-72146",
+    product_id: "54412",
+    price: 44.50,
+    currency: "USD",
+    min_quantity: "1.0",
+  },
+  {
+    name: "Mchakal Baklawa Dome",
+    description:
+      "Bronze tray of 1600 gr mixed baklava pieces stuffed with Cashew Nuts Pistachios and Walnuts.",
+    image:
+      "/web/image/product.template/50374/image_512/%5BMixed%20Baklava%20Dome%5D%20Mchakal%20Baklawa%20Dome?unique=14c4d3e",
+    url: "/shop/mixed-baklava-dome-mchakal-baklawa-dome-50374",
+    product_id: "40519",
+    price: 43.00,
+    currency: "USD",
+    min_quantity: "1.0",
+  },
+  {
+    name: "Mixed Baklava Original",
+    description: "Bite-sized mix baklava pieces.",
+    image:
+      "/web/image/product.template/77808/image_512/Mixed%20Baklava%20Original?unique=c8e04f5",
+    url: "/shop/mixed-baklava-original-77808",
+    product_id: "62884",
+    price: 20.00,
+    currency: "USD",
+    min_quantity: "0.5",
+  },
+  {
+    name: "Knefeh Kashta Platter",
+    description:
+      "Two layered semolina dough centered with kashta garnished with ground pistachios & flower jam.",
+    price: 25.0,
+    currency: "USD",
+    image:
+      "/web/image/product.template/77887/image_512/Knefeh%20Kashta%20Platter?unique=b8ad8cb",
+    product_url: "/shop/knefeh-kashta-platter-77887",
+    product_id: 63067,
+    min_quantity: 1.0,
+  },
+  {
+    name: "Knefeh Cheese Platter",
+    description:
+      "Two layered semolina dough centered with cheese garnished with ground pistachios.",
+    price: 25.0,
+    currency: "USD",
+    image:
+      "/web/image/product.template/77886/image_512/Knefeh%20Cheese%20Platter?unique=af81982",
+    product_url: "/shop/knefeh-cheese-platter-77886",
+    product_id: 63062,
+    min_quantity: 1.0,
+  },
+  {
+    name: "Lebanese Kaak Round",
+    description: "Round Arabic kaak suits with knefe or mafrouke.",
+    price: 0.5,
+    currency: "USD",
+    image:
+      "/web/image/product.template/49055/image_512/Lebanese%20Kaak%20Round?unique=a8b718d",
+    product_url: "/shop/lebanese-kaak-round-49055",
+    product_id: 42918,
+    min_quantity: 6.0,
+  },
+  {
+    name: "Chocolate Assabeh Cashew",
+    description: "A delightful fusion between Baklava fingers and Chocolate.",
+    price: 22.5,
+    currency: "USD",
+    image:
+      "/web/image/product.template/78246/image_512/Chocolate%20Assabeh%20Cashew?unique=a8ec92b",
+    product_url: "/shop/chocolate-assabeh-cashew-78246",
+    product_id: 63991,
+    min_quantity: 0.5,
+  },
+  {
+    name: "Knefeh Cheese & Kashta",
+    description:
+      "A Combination of Knefeh Kashta and Knefeh Cheese. Two layered semolina dough centered with kashta or cheese garnished with ground pistachios and flower jam. Served with a bottle of sugar syrup aside.",
+    price: 21.0,
+    currency: "USD",
+    image:
+      "/web/image/product.template/77873/image_512/Knefeh%20Cheese%20%26%20Kashta?unique=811efd6",
+    product_url: "/shop/knefeh-cheese-kashta-77873",
+    product_id: 63031,
+    min_quantity: 0.5,
+  },
+  {
+    name: "Knefeh Chocolate",
+    description:
+      "Two Layered Semolina dough centered with kashta cream and topped with Belgium Chocolate.",
+    price: 29.5,
+    currency: "USD",
+    image:
+      "/web/image/product.template/77872/image_512/Knefeh%20Chocolate?unique=426243c",
+    product_url: "/shop/knefeh-chocolate-77872",
+    product_id: 63029,
+    min_quantity: 0.5,
+  },
+  {
+    name: "Knefeh Cheese & Chocolate",
+    description:
+      "Two Layered Semolina dough centered with cheese and topped with Belgium Chocolate.",
+    price: 29.5,
+    currency: "USD",
+    image:
+      "/web/image/product.template/77874/image_512/Knefeh%20Cheese%20%26%20Chocolate?unique=8e7d2ba",
+    product_url: "/shop/knefeh-cheese-chocolate-77874",
+    product_id: 63035,
+    min_quantity: 0.5,
+  },
+  {
+    name: "Knefeh Apple Cinnamon",
+    description:
+      "Two layered semolina dough centered with caramelized apples and cinnamon.",
+    price: 21.0,
+    currency: "USD",
+    image:
+      "/web/image/product.template/77877/image_512/%5BKnefeh%20Apple%20Cinnamon%5D%20Knefeh%20Apple%20Cinnamon?unique=feaf7d4",
+    product_url: "/shop/knefeh-apple-cinnamon-knefeh-apple-cinnamon-77877",
+    product_id: 63041,
+    min_quantity: 1.0,
+  },
+  {
+    name: "Kaaket Knefeh Chocolate",
+    description:
+      "A delightful combination between traditional Arabic kaak Knefeh and Chocolate.",
+    price: 5.0,
+    currency: "USD",
+    image:
+      "/web/image/product.template/77885/image_512/Kaaket%20Knefeh%20Chocolate?unique=fd043e5",
+    product_id: 63059,
+    min_quantity: 1.0,
+    url: "/shop/kaaket-knefeh-chocolate-77885",
+  },
+  {
+    name: "Kaaket Knefeh Cheese Chocolate",
+    description:
+      "A delightful combination between traditional Arabic kaak Knefeh and Chocolate.",
+    price: 5.0,
+    currency: "USD",
+    image:
+      "/web/image/product.template/77884/image_512/Kaaket%20Knefeh%20Cheese%20Chocolate?unique=35d74c6",
+    product_id: 63058,
+    min_quantity: 1.0,
+    url: "/shop/kaaket-knefeh-cheese-chocolate-77884",
+  },
+  {
+    name: "Knefeh Kashta",
+    description:
+      "Two layered semolina dough centered with kashta garnished with ground pistachios and flower jam. Served with a bottle of sugar syrup aside.",
+    price: 21.0,
+    currency: "USD",
+    image:
+      "/web/image/product.template/77871/image_512/Knefeh%20Kashta?unique=975a7d9",
+    product_id: 63027,
+    min_quantity: 0.5,
+    url: "/shop/knefeh-kashta-77871",
+  },
+  {
+    name: "Knefeh Cheese",
+    description:
+      "Two layered semolina dough centered with cheese garnished with ground pistachios and flower jam. Served with a bottle of sugar syrup aside.",
+    price: 21.0,
+    currency: "USD",
+    image:
+      "/web/image/product.template/77870/image_512/Knefeh%20Cheese?unique=1bca9b0",
+    product_id: 63033,
+    min_quantity: 0.5,
+    url: "/shop/knefeh-cheese-77870",
+  },
+  {
+    name: "Croissant Knefeh",
+    description:
+      "A delightful combination between Croissant and knefeh Cheese or Kashta.",
+    price: 4.5,
+    currency: "USD",
+    image:
+      "/web/image/product.template/77732/image_512/Croissant%20Knefeh?unique=61743e6",
+    product_id: 62669,
+    min_quantity: 1.0,
+    url: "/shop/croissant-knefeh-77732",
+  },
+  {
+    name: "Kaaket Knefeh Kashta",
+    description:
+      "A delightful combination between traditional arabic kaak and knefeh.",
+    price: 2.5,
+    currency: "USD",
+    image:
+      "/web/image/product.template/77881/image_512/Kaaket%20Knefeh%20Kashta?unique=269c22f",
+    product_id: 63052,
+    min_quantity: 1.0,
+    url: "/shop/kaaket-knefeh-kashta-77881",
+  },
+  {
+    name: "Kaaket Knefeh Cheese",
+    description:
+      "A delightful combination between traditional arabic kaak and knefeh.",
+    price: 2.5,
+    currency: "USD",
+    image:
+      "/web/image/product.template/77880/image_512/Kaaket%20Knefeh%20Cheese?unique=d8b9fc2",
+    product_id: 63050,
+    min_quantity: 1.0,
+    url: "/shop/kaaket-knefeh-cheese-77880",
+  },
+  {
+    name: "Knefeh Plate Take Away",
+    description: "A portion of 200 gr of knefeh Kashta or Cheese.",
+    price: 5.5,
+    currency: "USD",
+    image:
+      "/web/image/product.template/77878/image_512/Knefeh%20Plate%20Take%20Away?unique=734f916",
+    product_id: 63042,
+    min_quantity: 1.0,
+    url: "/shop/knefeh-plate-take-away-77878",
+  },
+];
