@@ -10,9 +10,10 @@ import HallabStory from "../components/Sections/HallabStory";
 import Slider from "react-slick";
 import { feedbacks, Hallabproducts } from "../data";
 import Footer from "../components/ui/Footer";
-import FeedbackCard from "../components/Sections/FeedbackCard";
+import FeedbackCard from "../components/Sections/FeedbackSection/FeedbackCard";
 import CustomButton from "../components/ui/Button";
 import { settings, settingsFeedbacks } from "../components/Slider/settings";
+import "../App.css";
 
 const products = [
   {
@@ -59,7 +60,6 @@ interface IProps {}
 const Home = ({}: IProps) => {
   return (
     <>
-      <NavBar />
       <BannerSlider />
       <HallabStory />
       <section>
@@ -108,7 +108,7 @@ const Home = ({}: IProps) => {
           ))}
         </Slider>
         <div className="px-6 pt-20 pb-3 flex justify-center">
-          <CustomButton>{"View More"}</CustomButton>
+          <CustomButton url="/shop">{"View More"}</CustomButton>
         </div>
       </div>
 
@@ -131,7 +131,7 @@ const Home = ({}: IProps) => {
               adventure. Whether you're looking to try something new or simply
               crave a taste of home, our daily dish is the perfect choice.
             </p>
-            <CustomButton>Discover More</CustomButton>
+            <CustomButton url="/about">Discover More</CustomButton>
           </div>
         </div>
       </div>
@@ -150,7 +150,6 @@ const Home = ({}: IProps) => {
           </Slider>
         </div>
       </section>
-      <Footer />
     </>
   );
 };

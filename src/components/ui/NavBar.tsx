@@ -7,7 +7,7 @@ import {
 
 import Select from "./Select";
 import { useState } from "react";
-import { socialMediaLinks } from "../../data";
+import { socialMediaLinks, stores } from "../../data";
 
 interface IProps {}
 const NavBar = ({}: IProps) => {
@@ -74,7 +74,7 @@ const NavBar = ({}: IProps) => {
               </div>
               <img src="assets/Lebanon-Store.png" className="logo" />
               <div className="md:w-40 flex justify-end">
-                <Select />
+                <Select data={stores}/>
               </div>
             </div>
 
