@@ -1,3 +1,5 @@
+import CustomButton from "../ui/Button";
+
 const CateringSection = ({}: IProps) => {
   return (
     <section >
@@ -10,12 +12,7 @@ const CateringSection = ({}: IProps) => {
             Indulge in a savory journey with our catering service that will
             leave your guests wanting more.
           </p>
-          <a
-            href={""}
-            className={"bg-[#006648] text-white w-fit px-8 py-3 rounded-md"}
-          >
-            {"Know More"}
-          </a>
+          <CustomButton url="/contactus">Contact us</CustomButton>
         </div>
       </div>
     </section>
