@@ -142,10 +142,10 @@ const Shop = ({}: IProps) => {
                           className="text-white"
                         />
                       </CustomButton>
-                      <CustomButton style="p-4 border border-[#006648] bg-white hover:border-[#006648] hover:bg-[#e6e5e5] hover:text-black group">
+                      <CustomButton style="p-4 border border-[#006648] bg-white hover:border-[#006648] hover:bg-[#e6e5e5] hover:text-black group/heart">
                         <FontAwesomeIcon
                           icon={faHeart}
-                          className="text-[#006648] group-hover:text-black"
+                          className="text-[#006648] group-hover/heart:text-black"
                         />
                       </CustomButton>
                     </div>
