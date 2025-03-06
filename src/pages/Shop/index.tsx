@@ -21,16 +21,17 @@ const Shop = ({}: IProps) => {
           <ul>
             {categories.map(({ name }, index) => (
               <li className="py-1 text-base" key={index}>
-                {/* <a href={link}> */}
-                <div className="flex items-center">
+                <div className="flex items-center group">
                   <input
-                    // checked
+                    checked={index === 0}
                     id={`category-${index}`}
                     type="radio"
-                    value=""
-                    name={`category`}
-                    className="w-4 h-4 bg-gray-100 border-gray-300"
+                    name="category"
+                    className="hidden peer"
                   />
+                  <div className="w-5 h-5 rounded-full group-hover:border-2 group-hover:border-[#006648] peer-checked:border-[6px] peer-checked:border-[#006648] peer-checked:bg-white flex items-center justify-center">
+                    <div className="w-2.7 h-2.7 bg-white rounded-full hidden peer-checked:block"></div>
+                  </div>
                   <label
                     htmlFor={`category-${index}`}
                     className="ms-2 font-medium text-gray-900"
@@ -38,7 +39,6 @@ const Shop = ({}: IProps) => {
                     {name}
                   </label>
                 </div>
-                {/* </a> */}
               </li>
             ))}
           </ul>
@@ -126,36 +126,46 @@ const Shop = ({}: IProps) => {
             </div>
           </div>
           <div className="products flex flex-row flex-wrap gap-4">
-            {sweetsProducts.map(({ name,image,description,price,currency }) => (
-              <div className="w-[23%] bg-white border border-gray-200 rounded-lg shadow-sm mt-2">
-                <div className="relative h-[130px] group">
-                  <img
-                    className="rounded-t-lg w-full h-full object-cover"
-                    src={`https://www.hallab.com.lb/${image}`}
-                    alt=""
-                  />
-                  <div className="absolute bottom-0 flex justify-evenly w-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <CustomButton style="p-4 border border-[#006648] hover:border-[#00573d] hover:bg-[#00573d]">
-                    <FontAwesomeIcon icon={faShoppingCart} className="text-white"/>
-                  </CustomButton>
-                  <CustomButton style="p-4 border border-[#006648] bg-white hover:border-[#006648] hover:bg-[#e6e5e5] hover:text-black group">
-                    <FontAwesomeIcon icon={faHeart}  className="text-[#006648] group-hover:text-black"/>
-                  </CustomButton>
+            {sweetsProducts.map(
+              ({ name, image, description, price, currency, url }) => (
+                <div className="w-full md:w-[23%] bg-white border border-gray-200 rounded-lg shadow-sm mt-2">
+                  <div className="relative h-[130px] group">
+                    <img
+                      className="rounded-t-lg w-full h-full object-cover"
+                      src={`https://www.hallab.com.lb/${image}`}
+                      alt=""
+                    />
+                    <div className="absolute bottom-0 flex justify-evenly w-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <CustomButton style="p-4 border border-[#006648] hover:border-[#00573d] hover:bg-[#00573d]">
+                        <FontAwesomeIcon
+                          icon={faShoppingCart}
+                          className="text-white"
+                        />
+                      </CustomButton>
+                      <CustomButton style="p-4 border border-[#006648] bg-white hover:border-[#006648] hover:bg-[#e6e5e5] hover:text-black group">
+                        <FontAwesomeIcon
+                          icon={faHeart}
+                          className="text-[#006648] group-hover:text-black"
+                        />
+                      </CustomButton>
+                    </div>
+                  </div>
+                  <div className="p-2">
+                    <a href={`https://www.hallab.com.lb/${url}`}>
+                      <h5 className="text-[#006648] mb-2 text-base font-normal tracking-tight hover:text-gray-900">
+                        {name}
+                      </h5>
+                    </a>
+                    <p className="mb-3 text-sm font-normal text-gray-700 line-clamp-2">
+                      {description}
+                    </p>
+                    <p>
+                      {currency} {price.toFixed(2)}
+                    </p>
                   </div>
                 </div>
-                <div className="p-2">
-                  <a href="#">
-                    <h5 className="mb-2 text-base font-normal tracking-tight text-gray-900">
-                      {name}
-                    </h5>
-                  </a>
-                  <p className="mb-3 text-sm font-normal text-gray-700 line-clamp-2">
-                    {description}
-                  </p>
-                 <p>{currency} {price}</p>
-                </div>
-              </div>
-            ))}
+              )
+            )}
           </div>
         </div>
       </div>
